@@ -735,6 +735,7 @@ export interface WebViewType {
     errorText?: TextStyle;
 }
 
+// Radio Buttons
 export interface RadioButtonsLabelStyle {
     labelTextStyle?: TextStyle;
 }
@@ -754,3 +755,8 @@ export interface RadioButtonsContainerStyle {
 }
 
 export type RadioButtonsStyles = RadioButtonsContainerStyle & RadioButtonsItemStyle & RadioButtonsLabelStyle;
+
+// Background Gradient
+export interface BackgroundGradientStyles {
+    container?: ViewStyle;
+}
