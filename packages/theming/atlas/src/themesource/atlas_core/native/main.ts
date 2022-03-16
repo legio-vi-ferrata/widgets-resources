@@ -76,6 +76,8 @@ import * as widgetsWebView from "./core/widgets/webview";
 import * as helperClasses from "./core/helpers/helperclasses";
 import * as radioButtons from "./core/widgets/radiobuttons";
 import * as helperRadioButtons from "./core/helpers/radiobuttons";
+import * as widgetsColumnChart from "./core/widgets/columnchart";
+import * as helpersColumnChart from "./core/helpers/columnchart";
 //
 //
 // ================================= CUSTOM =================================\\
@@ -162,6 +164,8 @@ module.exports = [
     !exclusionVariables.excludeHelpers ? helperClasses : {},
     !exclusionVariables.excludeRadioButtons ? radioButtons : {},
     !exclusionVariables.excludeRadioButtons && !exclusionVariables.excludeRadioButtonsHelper ? helperRadioButtons : {},
+    !exclusionVariables.excludeColumnChart ? widgetsColumnChart : {},
+    !exclusionVariables.excludeColumnChart && !exclusionVariables.excludeColumnChartHelper ? helpersColumnChart : {},
     layout,
     page
 ].reduce((merged, object) => ({ ...merged, ...object }), {});

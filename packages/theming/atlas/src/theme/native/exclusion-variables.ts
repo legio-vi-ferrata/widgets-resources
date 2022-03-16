@@ -110,3 +110,7 @@ export const excludeHelpers = false;
 // Radio Buttons
 export const excludeRadioButtons = false;
 export const excludeRadioButtonsHelper = false;
+
+// Column Chart
+export const excludeColumnChart = false;
+export const excludeColumnChartHelper = false;

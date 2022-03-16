@@ -2111,6 +2111,23 @@
             ]
         }
     ],
+    "com.mendix.widget.native.columnchart.ColumnChart": [
+        {
+            "name": "Chart size",
+            "type": "Dropdown",
+            "description": "Size of the chart.",
+            "options": [
+                {
+                    "name": "Square",
+                    "class": "columnChartSquare"
+                },
+                {
+                    "name": "Maximum space",
+                    "class": "columnChartMaxSpace"
+                }
+            ]
+        }
+    ],
     "com.mendix.widget.native.progressbar.ProgressBar": [
         {
             "name": "Progress bar style",
